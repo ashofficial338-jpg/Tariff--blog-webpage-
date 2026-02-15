@@ -202,7 +202,9 @@ main p {
 }
 @media screen and (max-width: 768px) {
     .container-1 {
-        flex-direction: column;
+      display: grid;
+      grid-template-rows: 200px 1fr;
+        gap: 20px;
     }
     
 }
@@ -212,19 +214,64 @@ main p {
     }
     .content-1, .content-2, .content-3 {
         flex: 1 1 100%;
+        
     }
 }
-
-footer {
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
-footer p {
-    margin: 0;
-    font-size: 14px;
+.form {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #a32323;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  margin: 20px auto;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+.feedback.show {
+  display: block;
 }

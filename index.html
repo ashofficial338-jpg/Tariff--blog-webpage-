@@ -87,7 +87,31 @@
         </section>
     </main>
     <footer>
-        <form action=""></form>
+       <form id="contactForm" class="form">
+  <h2>Contact Us</h2>
+
+  <label>
+    Name
+    <input type="text" id="name" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" id="email" required>
+  </label>
+
+  <label>
+    Message
+    <textarea id="message" required></textarea>
+  </label>
+
+  <button type="submit">Submit</button>
+
+  <!-- Feedback messages -->
+  <p class="feedback success" id="successMsg">Form submitted successfully!</p>
+  <p class="feedback error" id="errorMsg">Please fill all fields correctly.</p>
+</form>
+
     </footer>
 </body>
 
