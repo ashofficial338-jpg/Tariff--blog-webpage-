@@ -1,0 +1,230 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aca6a6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header h1 {
+    margin: 10px;
+    font-size: 54px;
+    font-family: Arial, sans-serif;
+    text-decoration: dotted underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 5px;
+}
+header h1:hover {
+    text-decoration: double underline;
+    color: #ff6347;
+    transition: .8s;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+main h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+main p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.content-1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.content-1 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: dotted underline;
+}
+.content-1 p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card-1 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.content-1 ,.card-1 {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+.content-1 :hover, .card-1 :hover {
+    background-color: #973333;
+    transition: .3s;
+}
+.card-1 image :hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+.content-2{
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.content-2 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: dotted underline;
+}
+.content-2 p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.content-2:hover {
+    background-color: #973333;
+    transition: .3s;
+}
+.card-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card-2 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.card-2 image :hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+.card-2 .content-2 {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+.content-3 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.content-3 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-decoration: dotted underline;
+
+}
+.content-3 p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.content-3:hover {
+    background-color: #973333;
+    transition: .3s;
+}
+.card-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card-3 {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.card-3 image :hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+.card-1,.card-2,.card-3 {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+.content-1, .content-2, .content-3 {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+@media screen and (max-width: 1024px) {
+   nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+     nav a {
+        margin: 10px 0;   
+        text-decoration: dashed underline;
+          
+    }
+    nav a:hover {
+        text-decoration: double underline;
+        color: #ff6347;
+        transition: 1.5s;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .container-1 {
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width: 648px) {
+    .card-1, .card-2, .card-3 {
+        flex: 1 1 100%;
+    }
+    .content-1, .content-2, .content-3 {
+        flex: 1 1 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
